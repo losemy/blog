@@ -1,6 +1,6 @@
-baseURL = 'https://example.com/'
+baseURL = 'https://blog.apktool.top/'
 languageCode = 'zh-cn'
-title = '我的个人博客'
+title = 'lose的博客'
 theme = 'PaperMod'
 
 # 启用 Git 信息
@@ -20,8 +20,8 @@ enableEmoji = true
 
 [params]
   # 博客描述
-  description = "这是我的个人技术博客，分享编程、技术和生活"
-  author = "Your Name"
+  description = "个人技术博客，分享编程、技术和生活"
+  author = "lose"
   
   # SEO 优化
   keywords = ["博客", "技术", "编程"]
