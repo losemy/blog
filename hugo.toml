@@ -26,6 +26,13 @@ enableEmoji = true
   # SEO 优化
   keywords = ["博客", "技术", "编程"]
   
+  # Favicon 配置
+  [params.assets]
+    favicon = "/favicon.svg"
+    favicon16x16 = "/favicon.svg"
+    favicon32x32 = "/favicon.svg"
+    apple_touch_icon = "/apple-touch-icon.png"
+  
   # 首页信息
   [params.homeInfoParams]
     Title = "欢迎来到我的博客 👋"
@@ -34,11 +41,7 @@ enableEmoji = true
   # 社交链接
   [[params.socialIcons]]
     name = "github"
-    url = "https://github.com/yourusername"
-  
-  [[params.socialIcons]]
-    name = "twitter"
-    url = "https://twitter.com/yourusername"
+    url = "https://github.com/losemy"
 
   # 显示阅读时间
   ShowReadingTime = true
