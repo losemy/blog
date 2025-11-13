@@ -1,0 +1,140 @@
+baseURL = 'https://example.com/'
+languageCode = 'zh-cn'
+title = '我的个人博客'
+theme = 'PaperMod'
+
+# 启用 Git 信息
+enableGitInfo = true
+
+# 启用 robots.txt
+enableRobotsTXT = true
+
+# 启用 Emoji
+enableEmoji = true
+
+# SEO 优化设置
+[sitemap]
+  changefreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = 0.5
+
+[params]
+  # 博客描述
+  description = "这是我的个人技术博客，分享编程、技术和生活"
+  author = "Your Name"
+  
+  # SEO 优化
+  keywords = ["博客", "技术", "编程"]
+  
+  # 首页信息
+  [params.homeInfoParams]
+    Title = "欢迎来到我的博客 👋"
+    Content = "分享技术、记录生活、探索世界"
+
+  # 社交链接
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/yourusername"
+  
+  [[params.socialIcons]]
+    name = "twitter"
+    url = "https://twitter.com/yourusername"
+
+  # 显示阅读时间
+  ShowReadingTime = true
+  
+  # 显示分享按钮
+  ShowShareButtons = true
+  
+  # 显示文章目录
+  ShowToc = true
+  
+  # 显示代码复制按钮
+  ShowCodeCopyButtons = true
+  
+  # 显示面包屑导航
+  ShowBreadCrumbs = true
+  
+  # 显示文章编辑建议
+  ShowPostNavLinks = true
+
+# 多语言支持
+[languages]
+  [languages.zh-cn]
+    languageName = "简体中文"
+    weight = 1
+    
+    [languages.zh-cn.params]
+      description = "这是我的个人技术博客"
+    
+    [[languages.zh-cn.menu.main]]
+      name = "首页"
+      url = "/"
+      weight = 1
+    
+    [[languages.zh-cn.menu.main]]
+      name = "文章"
+      url = "/posts/"
+      weight = 2
+    
+    [[languages.zh-cn.menu.main]]
+      name = "标签"
+      url = "/tags/"
+      weight = 3
+    
+    [[languages.zh-cn.menu.main]]
+      name = "归档"
+      url = "/archives/"
+      weight = 4
+    
+    [[languages.zh-cn.menu.main]]
+      name = "搜索"
+      url = "/search/"
+      weight = 5
+
+  [languages.en]
+    languageName = "English"
+    weight = 2
+    
+    [languages.en.params]
+      description = "My personal tech blog"
+    
+    [[languages.en.menu.main]]
+      name = "Home"
+      url = "/en/"
+      weight = 1
+    
+    [[languages.en.menu.main]]
+      name = "Posts"
+      url = "/en/posts/"
+      weight = 2
+    
+    [[languages.en.menu.main]]
+      name = "Tags"
+      url = "/en/tags/"
+      weight = 3
+    
+    [[languages.en.menu.main]]
+      name = "Archives"
+      url = "/en/archives/"
+      weight = 4
+    
+    [[languages.en.menu.main]]
+      name = "Search"
+      url = "/en/search/"
+      weight = 5
+
+# 输出格式（用于搜索功能）
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# Markdown 渲染配置
+[markup]
+  [markup.highlight]
+    style = 'monokai'
+    lineNos = true
+    noClasses = false
+  
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
