@@ -1,5 +1,6 @@
 baseURL = 'https://blog.apktool.top/'
 languageCode = 'zh-cn'
+defaultContentLanguage = 'zh-cn'
 title = 'lose的博客'
 theme = 'PaperMod'
 
@@ -61,71 +62,31 @@ enableEmoji = true
   # 显示文章编辑建议
   ShowPostNavLinks = true
 
-# 多语言支持
-[languages]
-  [languages.zh-cn]
-    languageName = "简体中文"
-    weight = 1
-    
-    [languages.zh-cn.params]
-      description = "这是我的个人技术博客"
-    
-    [[languages.zh-cn.menu.main]]
-      name = "首页"
-      url = "/"
-      weight = 1
-    
-    [[languages.zh-cn.menu.main]]
-      name = "文章"
-      url = "/posts/"
-      weight = 2
-    
-    [[languages.zh-cn.menu.main]]
-      name = "标签"
-      url = "/tags/"
-      weight = 3
-    
-    [[languages.zh-cn.menu.main]]
-      name = "归档"
-      url = "/archives/"
-      weight = 4
-    
-    [[languages.zh-cn.menu.main]]
-      name = "搜索"
-      url = "/search/"
-      weight = 5
+# 菜单配置
+[[menu.main]]
+  name = "首页"
+  url = "/"
+  weight = 1
 
-  [languages.en]
-    languageName = "English"
-    weight = 2
-    
-    [languages.en.params]
-      description = "My personal tech blog"
-    
-    [[languages.en.menu.main]]
-      name = "Home"
-      url = "/en/"
-      weight = 1
-    
-    [[languages.en.menu.main]]
-      name = "Posts"
-      url = "/en/posts/"
-      weight = 2
-    
-    [[languages.en.menu.main]]
-      name = "Tags"
-      url = "/en/tags/"
-      weight = 3
-    
-    [[languages.en.menu.main]]
-      name = "Archives"
-      url = "/en/archives/"
-      weight = 4
-    
-    [[languages.en.menu.main]]
-      name = "Search"
-      url = "/en/search/"
-      weight = 5
+[[menu.main]]
+  name = "文章"
+  url = "/posts/"
+  weight = 2
+
+[[menu.main]]
+  name = "标签"
+  url = "/tags/"
+  weight = 3
+
+[[menu.main]]
+  name = "归档"
+  url = "/archives/"
+  weight = 4
+
+[[menu.main]]
+  name = "搜索"
+  url = "/search/"
+  weight = 5
 
 # 输出格式（用于搜索功能）
 [outputs]
